@@ -13,13 +13,13 @@
 </head>
 
 <body ng-controller="FullmetalController as cntrl">
-    <div class="container-fluid">
+    <div class="container">
         <h3>Favourite Anime</h3>
 
          <div class="animecard">
                 <div class="row">
 
-                    <div class="col-sm-12">
+                    <div class="col-md-12">
                         <p>Page Created with <kbd> Angular JS</kbd> + <kbd>RestFul Service (OMDB API)</kbd> + <kbd>Bootstrap CSS</kbd></p>
                     </div>
                     
@@ -31,14 +31,14 @@
             <div class="animecard">
                 <div class="row">
 
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <h1 class="animecardTitle">{{anime.Title}}</h1>
                         <h4 class="animecardCaption">{{anime.Type}} | {{anime.Year}} | IMDB: {{anime.imdbRating}}</h4>
                         <p>{{anime.Plot}}</p>
                     </div>
 
 
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <img src={{anime.Poster}} class="img-responsive" width="200px" height="240px">
                     </div>
                 </div>
