@@ -8,7 +8,7 @@ function fullmetalCntrl($http, animeImdbSvc) {
 
     animeImdbSvc.imdbIds.forEach(function(imdbId) {
         console.log(imdbId);
-        $http.get("http://www.omdbapi.com/?i="+imdbId).then(function(response) {
+        $http.get("https://www.omdbapi.com/?i="+imdbId).then(function(response) {
             self.animeList.push(response.data);
             console.log(self.animeList);
         });
