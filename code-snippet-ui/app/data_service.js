@@ -5,7 +5,7 @@
 
         return {
             getJsonData : function () {
-                return $http.get("http://localhost:5000/snippets");
+                return $http.get("https://code-snippets-block.herokuapp.com/snippets");
             }
         }
     });
