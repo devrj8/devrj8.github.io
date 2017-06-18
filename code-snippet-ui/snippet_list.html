@@ -1,0 +1,10 @@
+<div ng-controller="SnippetListCntrl">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <ul class="list-group" >
+            <li class="list-group-item"><h4>Java Snippet List</h4></li>
+            <li class="list-group-item" ng-repeat="name in list"> <img src="icons/page-blank.png" width="33px" height="40px" ><a class="btn btn-small btn-active " ng-href="#!snippet/{{name.name}}"> {{name.name}}</a> </li>
+        </ul>
+    </div>
+</div>
